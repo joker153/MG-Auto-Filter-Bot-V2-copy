@@ -98,6 +98,7 @@ async def start(bot, update):
         InlineKeyboardButton('OWNER', url='https://t.me/Wafikh'),
     ],[
         InlineKeyboardButton('HOME', callback_data="start")
+    ]]
     
     
     reply_markup = InlineKeyboardMarkup(buttons)
