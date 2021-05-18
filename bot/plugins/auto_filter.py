@@ -193,8 +193,9 @@ async def auto_filter(bot, update):
         reply_markup = InlineKeyboardMarkup(result[0])
 
         try:
-            await bot.send_message(
-                chat_id = update.chat.id,
+            await bot.send_photo(
+                chat_id=update.chat.id,
+                photo="https://telegra.ph/file/d39f3e813621a67834758.jpg",
                 text=f"Found {(len_results)} Results For Your Query: <code>{query}</code>",
                 reply_markup=reply_markup,
                 parse_mode="html",
