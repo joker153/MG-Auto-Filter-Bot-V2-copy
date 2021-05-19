@@ -11,7 +11,6 @@ db = Database()
 
 @Client.on_message(filters.command(["start"]) & filters.private, group=1)
 async def start(bot, update):
-    
     update_channel = "@channel link"
     if update_channel:
         try:
